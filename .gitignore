@@ -172,3 +172,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+metabase.db.mv.db
+metabase.db.trace.db
+plugins/
