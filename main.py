@@ -53,22 +53,10 @@ notebook.pack(expand=1, fill="both")
 # region Tab basic
 tab1 = ttk.Frame(notebook)
 notebook.add(tab1, text='Basic')
-ttk.Label(tab1, text='Text Input:').grid(row=0, column=0, sticky=tk.W, padx=10, pady=5)
-ttk.Entry(tab1).grid(row=0, column=1, padx=10, pady=5)
 
-ttk.Label(tab1, text='Password:').grid(row=1, column=0, sticky=tk.W, padx=10, pady=5)
-ttk.Entry(tab1, show='*').grid(row=1, column=1, padx=10, pady=5)
 
-ttk.Label(tab1, text='Check:').grid(row=0, column=2, sticky=tk.W, padx=10, pady=5)
-ttk.Checkbutton(tab1).grid(row=0, column=3, padx=10, pady=5)
-
-ttk.Label(tab1, text='Radio:').grid(row=1, column=2, sticky=tk.W, padx=10, pady=5)
-r_var = tk.IntVar()
-ttk.Radiobutton(tab1, text="Option 1", variable=r_var, value=1).grid(row=1, column=3, sticky=tk.W, padx=10, pady=5)
-ttk.Radiobutton(tab1, text="Option 2", variable=r_var, value=2).grid(row=2, column=3, sticky=tk.W, padx=10, pady=5)
-
-btn = ttk.Button(tab1, text="Start Frontend", command=FrontendState.toggle_frontend)
-btn.grid(row=4, column=0, columnspan=2, pady=20)
+toggle_frontend_btn = ttk.Button(tab1, text="Start Frontend", command=FrontendState.toggle_frontend)
+toggle_frontend_btn.grid(row=4, column=0, columnspan=2, pady=20)
 #endregion
 
 
